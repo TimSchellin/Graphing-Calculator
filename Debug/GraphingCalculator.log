@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\stringtoqueue.h(27): warning C4018: '<': signed/unsigned mismatch
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\operator.h(65): warning C4715: 'Operator::getPrecedence': not all control paths return a value
+  GraphingCalculator.vcxproj -> C:\Users\Tim-Laptop\source\repos\GraphingCalculator\Debug\GraphingCalculator.exe
