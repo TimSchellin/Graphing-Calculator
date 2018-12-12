@@ -9,64 +9,108 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="UI">
+      <UniqueIdentifier>{8c2c4306-26bc-41ec-a1cf-1572f85113ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RPN_ShuntingYard">
+      <UniqueIdentifier>{88a3c85d-f3ff-4a03-b5f0-b194d2aba338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="List Functions">
+      <UniqueIdentifier>{9654be14-0568-4635-b7b7-9ce9f2516122}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Token.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="GraphPlane.h">
+      <Filter>UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\FunctionOperator.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Dimensions.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="InputField.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Sidebar.h">
+      <Filter>UI</Filter>
     </ClInclude>
     <ClInclude Include="..\..\ReversePolish\ReversePolish\Linked_List.h">
-      <Filter>Header Files</Filter>
+      <Filter>List Functions</Filter>
     </ClInclude>
     <ClInclude Include="..\..\ReversePolish\ReversePolish\LinkedList.h">
-      <Filter>Header Files</Filter>
+      <Filter>List Functions</Filter>
     </ClInclude>
     <ClInclude Include="..\..\ReversePolish\ReversePolish\List.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Operand.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Operator.h">
-      <Filter>Header Files</Filter>
+      <Filter>List Functions</Filter>
     </ClInclude>
     <ClInclude Include="..\..\ReversePolish\ReversePolish\Queue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\ShuntingYard.h">
-      <Filter>Header Files</Filter>
+      <Filter>List Functions</Filter>
     </ClInclude>
     <ClInclude Include="..\..\ReversePolish\ReversePolish\Simple_List.h">
+      <Filter>List Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReversePolish\ReversePolish\Token.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReversePolish\ReversePolish\StringToQueue.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReversePolish\ReversePolish\ShuntingYard.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReversePolish\ReversePolish\Operator.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReversePolish\ReversePolish\Operand.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReversePolish\ReversePolish\FunctionOperator.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="Coordinates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Banner.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UserFunction.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="sfVectorConversion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\ReversePolish\ReversePolish\Stack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\StringToQueue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interface.h">
-      <Filter>Header Files</Filter>
+      <Filter>List Functions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\ReversePolish\ReversePolish\FunctionOperator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ReversePolish\ReversePolish\evaluate.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sidebar.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
     <ClCompile Include="Interface.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphPlane.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ReversePolish\ReversePolish\FunctionOperator.cpp">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClCompile>
+    <ClCompile Include="Banner.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="InputField.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UserFunction.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ReversePolish\ReversePolish\evaluate.h">
+      <Filter>RPN_ShuntingYard</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

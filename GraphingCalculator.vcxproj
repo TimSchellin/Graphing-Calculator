@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -76,11 +76,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\SFML\SFML-2.5.1\include;C:\SFML\SFML-2.5.1\include;C:\SFML\SFML-2.5.1\include;C:\SFML\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Tim-Laptop\source\repos\GraphingCalculator\GraphingCalculator\ListStructures;C:\Users\Tim-Laptop\source\repos\GraphingCalculator\GraphingCalculator\RPN_ShuntingYard;C:\Users\Tim-Laptop\source\repos\GraphingCalculator\GraphingCalculator\UI;C:\SFML\SFML-2.5.1\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\SFML\SFML-2.5.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-window.lib;sfml-system.lib;sfml-graphics.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-window-d.lib;sfml-system-d.lib;sfml-graphics-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -99,7 +99,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\SFML\SFML-2.5.1\include;C:\SFML\SFML-2.5.1\include;C:\SFML\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Tim-Laptop\source\repos\GraphingCalculator\GraphingCalculator\ListStructures;C:\Users\Tim-Laptop\source\repos\GraphingCalculator\GraphingCalculator\RPN_ShuntingYard;C:\Users\Tim-Laptop\source\repos\GraphingCalculator\GraphingCalculator\UI;C:\SFML\SFML-2.5.1\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -135,13 +135,26 @@
     <ClInclude Include="..\..\ReversePolish\ReversePolish\Stack.h" />
     <ClInclude Include="..\..\ReversePolish\ReversePolish\StringToQueue.h" />
     <ClInclude Include="..\..\ReversePolish\ReversePolish\Token.h" />
+    <ClInclude Include="Banner.h" />
+    <ClInclude Include="Coordinates.h" />
+    <ClInclude Include="Dimensions.h" />
+    <ClInclude Include="GraphPlane.h" />
+    <ClInclude Include="InputField.h" />
     <ClInclude Include="Interface.h" />
+    <ClInclude Include="sfVectorConversion.h" />
+    <ClInclude Include="Sidebar.h" />
+    <ClInclude Include="UserFunction.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\ReversePolish\ReversePolish\evaluate.cpp" />
+    <ClCompile Include="..\..\ReversePolish\ReversePolish\evaluate.h" />
     <ClCompile Include="..\..\ReversePolish\ReversePolish\FunctionOperator.cpp" />
+    <ClCompile Include="Banner.cpp" />
+    <ClCompile Include="GraphPlane.cpp" />
+    <ClCompile Include="InputField.cpp" />
     <ClCompile Include="Interface.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Sidebar.cpp" />
+    <ClCompile Include="UserFunction.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
