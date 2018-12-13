@@ -76,7 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Tim-Laptop\source\repos\GraphingCalculator\GraphingCalculator\ListStructures;C:\Users\Tim-Laptop\source\repos\GraphingCalculator\GraphingCalculator\RPN_ShuntingYard;C:\Users\Tim-Laptop\source\repos\GraphingCalculator\GraphingCalculator\UI;C:\SFML\SFML-2.5.1\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\SFML\SFML-2.5.1\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\SFML\SFML-2.5.1\lib</AdditionalLibraryDirectories>
@@ -123,32 +123,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\FunctionOperator.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\LinkedList.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Linked_List.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\List.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Operand.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Operator.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Queue.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\ShuntingYard.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Simple_List.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Stack.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\StringToQueue.h" />
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Token.h" />
     <ClInclude Include="Banner.h" />
     <ClInclude Include="Coordinates.h" />
     <ClInclude Include="Dimensions.h" />
+    <ClInclude Include="evaluate.h" />
+    <ClInclude Include="FunctionOperator.h" />
     <ClInclude Include="GraphPlane.h" />
     <ClInclude Include="InputField.h" />
     <ClInclude Include="Interface.h" />
+    <ClInclude Include="Linked_List.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="Operand.h" />
+    <ClInclude Include="Operator.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="RPN.h" />
     <ClInclude Include="sfVectorConversion.h" />
+    <ClInclude Include="ShuntingYard.h" />
     <ClInclude Include="Sidebar.h" />
+    <ClInclude Include="Simple_List.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="StringToQueue.h" />
+    <ClInclude Include="Token.h" />
     <ClInclude Include="UserFunction.h" />
+    <ClInclude Include="Variable.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\ReversePolish\ReversePolish\evaluate.h" />
-    <ClCompile Include="..\..\ReversePolish\ReversePolish\FunctionOperator.cpp" />
     <ClCompile Include="Banner.cpp" />
+    <ClCompile Include="FunctionOperator.cpp" />
     <ClCompile Include="GraphPlane.cpp" />
     <ClCompile Include="InputField.cpp" />
     <ClCompile Include="Interface.cpp" />

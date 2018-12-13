@@ -11,6 +11,9 @@ using namespace sf;
 //float SCALE = 1;
 //Vector2f OFFSET;
 
+extern Vector2f OFFSET;
+extern float SCALE;
+extern float YSCALE;
 // main window
 const int WINDOW_HEIGHT = 600;
 const int WINDOW_WIDTH = 1050;
@@ -23,6 +26,8 @@ const Vector2f BANNER_POS(0, 0);
 const int BAR_WIDTH = 300;
 const int CELL_HEIGHT = 65;
 const Vector2f BAR_POS(0, BANNER_HEIGHT);
+
+const int GRID_RATIO = 80;
 
 // graph plane
 const int GRAPH_WIDTH = WINDOW_WIDTH - BAR_WIDTH;
@@ -49,6 +54,8 @@ const Color INPUT_COLOR   = Color(235, 235, 235);
 const Color HIGHLIGHT1    = Color(255, 255, 255);
 const Color HIGHLIGHT2 = Color(0, 100, 140, 128);
 const Color TRANSPARENT = Color(0, 0, 0, 0);
+
+const Color CURVE_COLOR = Color(255, 0, 0);
 //fonts
 
 # endif

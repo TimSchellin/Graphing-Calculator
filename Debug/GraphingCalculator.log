@@ -1,4 +1,91 @@
-﻿  main.cpp
-c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\stringtoqueue.h(27): warning C4018: '<': signed/unsigned mismatch
-c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\operator.h(65): warning C4715: 'Operator::getPrecedence': not all control paths return a value
+﻿  GraphPlane.cpp
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(21): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(22): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(44): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(45): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(53): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(54): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(60): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(61): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(69): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(70): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(86): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(87): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(89): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(90): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(95): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(98): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(100): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(108): warning C4018: '<': signed/unsigned mismatch
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(112): warning C4018: '<': signed/unsigned mismatch
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(116): warning C4018: '<': signed/unsigned mismatch
+c:\users\tim-laptop\source\repos\graphingcalculator\graphingcalculator\graphplane.cpp(120): warning C4018: '<': signed/unsigned mismatch
   GraphingCalculator.vcxproj -> C:\Users\Tim-Laptop\source\repos\GraphingCalculator\Debug\GraphingCalculator.exe

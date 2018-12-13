@@ -1,5 +1,5 @@
 #include "GraphPlane.h"
-
+#include <cmath>
 /* 
 	THINGS IM GONNA NEED:
 	----------------------------
@@ -13,8 +13,8 @@ GraphPlane::GraphPlane() {
 	graphBackground.setPosition(GRAPH_POS);
 	graphBackground.setSize(Vector2f(GRAPH_WIDTH, GRAPH_HEIGHT));
 	graphBackground.setFillColor(GRAPH_COLOR);
-	setAxis();
-	createGridlines();
+	//setAxis();
+	//createGridlines();
 }
 
 void GraphPlane::setOffsets(int i, int j) {
@@ -30,39 +30,44 @@ VertexArray GraphPlane::getLine(int x1, int y1, int x2, int y2, int color) {
 }
 void GraphPlane::createGridlines() {
 
-	int majorSpace = 80;
+	majorGridlines_horz.clear();
+	majorGridlines_vert.clear();
+	minorGridlines_horz.clear();
+	minorGridlines_vert.clear();
+
+	int majorSpace = GRID_RATIO;
 	int minorSpace = majorSpace / 5;
 	int spaceCovered = 0;
 	
 	// create major horizontal gridlines
-	while (spaceCovered < (Y_MAX - Y_MIN) / 2) {
-		majorGridlines_horz.push_back(getLine(X_MIN, ORIGIN.y + spaceCovered, X_MAX, ORIGIN.y + spaceCovered, 0));
-		majorGridlines_horz.push_back(getLine(X_MIN, ORIGIN.y - spaceCovered, X_MAX, ORIGIN.y - spaceCovered, 0));
+	while (spaceCovered < Y_MAX*40 + abs(OFFSET.y) *2) {
+		majorGridlines_horz.push_back(getLine(X_MIN, ORIGIN.y + spaceCovered*YSCALE + OFFSET.y, X_MAX, ORIGIN.y + spaceCovered*YSCALE + OFFSET.y, 0));
+		majorGridlines_horz.push_back(getLine(X_MIN, ORIGIN.y - spaceCovered*YSCALE + OFFSET.y, X_MAX, ORIGIN.y - spaceCovered*YSCALE + OFFSET.y, 0));
 		spaceCovered += majorSpace;
 	}
 	spaceCovered = 0;
 
 	// create major vertical gridlines
-	while (spaceCovered < X_MAX / 2) {
+	while (spaceCovered < (X_MAX*40 / 2) + abs(OFFSET.x)*2) {
 		spaceCovered += majorSpace;
-		majorGridlines_vert.push_back(getLine(ORIGIN.x + spaceCovered, Y_MIN, ORIGIN.x + spaceCovered, Y_MAX, 0));
-		majorGridlines_vert.push_back(getLine(ORIGIN.x - spaceCovered, Y_MIN, ORIGIN.x - spaceCovered, Y_MAX, 0));
+		majorGridlines_vert.push_back(getLine(ORIGIN.x + spaceCovered*YSCALE + OFFSET.x, Y_MIN, ORIGIN.x + spaceCovered * YSCALE + OFFSET.x, Y_MAX, 0));
+		majorGridlines_vert.push_back(getLine(ORIGIN.x - spaceCovered*YSCALE + OFFSET.x, Y_MIN, ORIGIN.x - spaceCovered * YSCALE + OFFSET.x, Y_MAX, 0));
 	}
 	spaceCovered = 0;
 
 	// create minor horizontal gridlines
-	while (spaceCovered < (Y_MAX-Y_MIN) / 2) {
-		minorGridlines_horz.push_back(getLine(X_MIN, ORIGIN.y + spaceCovered, X_MAX, ORIGIN.y + spaceCovered, 2));
-		minorGridlines_horz.push_back(getLine(X_MIN, ORIGIN.y - spaceCovered, X_MAX, ORIGIN.y - spaceCovered, 2));
+	while (spaceCovered < Y_MAX + abs(OFFSET.y) *2) {
+		minorGridlines_horz.push_back(getLine(X_MIN, ORIGIN.y + spaceCovered + OFFSET.y, X_MAX, ORIGIN.y + spaceCovered + OFFSET.y, 2));
+		minorGridlines_horz.push_back(getLine(X_MIN, ORIGIN.y - spaceCovered + OFFSET.y, X_MAX, ORIGIN.y - spaceCovered + OFFSET.y, 2));
 		spaceCovered += minorSpace;
 	}
 	spaceCovered = 0;
 
 	// create minor vertical gridlines
-	while (spaceCovered < X_MAX / 2) {
+	while (spaceCovered < (X_MAX + abs(OFFSET.x) *2)) {
 		spaceCovered += minorSpace;
-		minorGridlines_vert.push_back(getLine(ORIGIN.x + spaceCovered, Y_MIN, ORIGIN.x + spaceCovered, Y_MAX, 2));
-		minorGridlines_vert.push_back(getLine(ORIGIN.x - spaceCovered, Y_MIN, ORIGIN.x - spaceCovered, Y_MAX, 2));
+		minorGridlines_vert.push_back(getLine(ORIGIN.x + spaceCovered + OFFSET.x, Y_MIN, ORIGIN.x + spaceCovered + OFFSET.x, Y_MAX, 2));
+		minorGridlines_vert.push_back(getLine(ORIGIN.x - spaceCovered + OFFSET.x, Y_MIN, ORIGIN.x - spaceCovered + OFFSET.x, Y_MAX, 2));
 	}
 }
 
@@ -78,11 +83,11 @@ void GraphPlane::setAxis() {
 	xAxis.resize(2);
 	yAxis.resize(2);
 
-	xAxis[0] = getVertex(ORIGIN.x - MID_WIDTH, ORIGIN.y, 1);
-	xAxis[1] = getVertex(ORIGIN.x + MID_WIDTH, ORIGIN.y, 1);
+	xAxis[0] = getVertex(ORIGIN.x - MID_WIDTH, ORIGIN.y + OFFSET.y, 1);
+	xAxis[1] = getVertex(ORIGIN.x + MID_WIDTH, ORIGIN.y + OFFSET.y, 1);
 
-	yAxis[0] = getVertex(ORIGIN.x, BANNER_HEIGHT, 1);
-	yAxis[1] = getVertex(ORIGIN.x, WINDOW_HEIGHT, 1);
+	yAxis[0] = getVertex(ORIGIN.x + OFFSET.x, BANNER_HEIGHT, 1);
+	yAxis[1] = getVertex(ORIGIN.x + OFFSET.x, WINDOW_HEIGHT, 1);
 }
 
 Vertex GraphPlane::getVertex(int i, int j, int option = 0) {
@@ -97,6 +102,8 @@ Vertex GraphPlane::getVertex(int i, int j, int option = 0) {
 
 void GraphPlane::draw(RenderWindow& window) {
 	window.draw(graphBackground);
+	createGridlines();
+	setAxis();
 
 	for (int i = 0; i < majorGridlines_horz.size(); i++) {
 		window.draw(majorGridlines_horz[i]);

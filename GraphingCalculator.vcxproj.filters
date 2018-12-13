@@ -35,39 +35,6 @@
     <ClInclude Include="Sidebar.h">
       <Filter>UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Linked_List.h">
-      <Filter>List Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\LinkedList.h">
-      <Filter>List Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\List.h">
-      <Filter>List Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Queue.h">
-      <Filter>List Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Simple_List.h">
-      <Filter>List Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Token.h">
-      <Filter>RPN_ShuntingYard</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\StringToQueue.h">
-      <Filter>RPN_ShuntingYard</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\ShuntingYard.h">
-      <Filter>RPN_ShuntingYard</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Operator.h">
-      <Filter>RPN_ShuntingYard</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Operand.h">
-      <Filter>RPN_ShuntingYard</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\FunctionOperator.h">
-      <Filter>RPN_ShuntingYard</Filter>
-    </ClInclude>
     <ClInclude Include="Coordinates.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -80,7 +47,46 @@
     <ClInclude Include="sfVectorConversion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\ReversePolish\ReversePolish\Stack.h">
+    <ClInclude Include="evaluate.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionOperator.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="Operand.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="Operator.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="RPN.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="ShuntingYard.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="StringToQueue.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="Token.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="Variable.h">
+      <Filter>RPN_ShuntingYard</Filter>
+    </ClInclude>
+    <ClInclude Include="Linked_List.h">
+      <Filter>List Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>List Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>List Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_List.h">
+      <Filter>List Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
       <Filter>List Functions</Filter>
     </ClInclude>
   </ItemGroup>
@@ -97,9 +103,6 @@
     <ClCompile Include="GraphPlane.cpp">
       <Filter>UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ReversePolish\ReversePolish\FunctionOperator.cpp">
-      <Filter>RPN_ShuntingYard</Filter>
-    </ClCompile>
     <ClCompile Include="Banner.cpp">
       <Filter>UI</Filter>
     </ClCompile>
@@ -109,7 +112,7 @@
     <ClCompile Include="UserFunction.cpp">
       <Filter>UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ReversePolish\ReversePolish\evaluate.h">
+    <ClCompile Include="FunctionOperator.cpp">
       <Filter>RPN_ShuntingYard</Filter>
     </ClCompile>
   </ItemGroup>

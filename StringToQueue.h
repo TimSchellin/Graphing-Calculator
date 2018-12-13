@@ -10,6 +10,7 @@
 #include <string>
 #include <stdlib.h>
 #include "FunctionOperator.h"
+#include "Variable.h"
 
 using namespace std;
 
@@ -19,7 +20,7 @@ bool isSymbol(char);
 
 Queue<Token*> infixExpression;
 
-Queue<Token*>& convert(string inputString) {
+Queue<Token*>& StrToToken(string inputString) {
 
 	string doubleNum = "";
 	string functionString = "";
@@ -31,6 +32,9 @@ Queue<Token*>& convert(string inputString) {
 				infixExpression.push(new Operand(stod(doubleNum)));
 				doubleNum = "";
 			}
+		}
+		else if (inputString[i] == 'x' || inputString[i] == 'X') {
+			infixExpression.push(new Variable());
 		}
 		else if (isalpha(inputString[i])) {
 			functionString += inputString[i];

@@ -12,7 +12,7 @@ InputField::InputField(Vector2f position, String text){
 	times.loadFromFile("times.ttf");
 	Vector2f newPos(position.x + 20, position.y + (CELL_HEIGHT/2)-20);
 	FunctionStr.setFont(times);
-	FunctionStr.setString(text);
+	FunctionStr.setString("-tan(x^2)");
 	FunctionStr.setPosition(newPos);
 	FunctionStr.setCharacterSize(25);
 	FunctionStr.setFillColor(Color::Black);
@@ -38,6 +38,7 @@ void InputField::draw(RenderWindow& window) {
 bool InputField::isInside(Vector2f position) {
 	return inputCell.getGlobalBounds().contains(position);
 }
+
 
 void InputField::createOutline(Vector2f pos) {
 	Vector2f newPos = Vector2f(pos.x + lineW, pos.y);

@@ -21,7 +21,7 @@ public:
 	}
 
 	void print(ostream& outs = cout) const {
-		outs << symbol;
+		cout << symbol;
 	}
 	
 	char getSymbol() {
@@ -45,7 +45,7 @@ public:
 				return(left / right);
 			case '^':
 				double result = left;
-				for (int i = 0; i < right; i++) {
+				for (int i = 0; i < right-1; i++) {
 					result *= result;
 				}
 				return result;

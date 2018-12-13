@@ -1,13 +1,14 @@
 #ifndef FUNCTION_OPERATOR_H
 #define FUNCTION_OPERATOR_H
 
+#include "Operand.h"
 #include "Token.h"
 #include <string>
 #include <iostream>
 #include <cmath>
 #include <vector>
 #include <algorithm>
-#include "Operand.h"
+
 
 class FunctionOperator : public Token {
 
@@ -20,7 +21,9 @@ public:
 	void print(ostream& outs = cout) const {
 		outs << str;
 	}
-	double calculate(Operand& input, string functionString);
+	double calculate(double input);
+
+	int getPrecedence();
 
 private:
 	string str;
@@ -35,4 +38,5 @@ STRING POSSIBLE OPTIONS:
 
 
 */
+
 #endif

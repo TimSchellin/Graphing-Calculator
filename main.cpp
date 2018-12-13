@@ -1,26 +1,26 @@
 #include "Token.h"
-#include "StringToQueue.h"
-#include "ShuntingYard.h"
 #include "Interface.h"
 
 #include <iostream>
 #include <cmath>
 #include <cassert>
 #include <SFML/Graphics.hpp>
+#include <stdio.h>
 
+#include "RPN.h"
+#include "ShuntingYard.h"
+#include "StringToQueue.h"
 void pause();
-void simpleSFML();
+void menu();
 
 using namespace std;
 using namespace sf;
 
-void testRPN();
+extern vector<String> functions;
 
 int main()
 {
-	//simpleSFML();
-
-	//testRPN();
+	menu();
 	Interface gui;
 	gui.run();
 	pause();
@@ -31,43 +31,15 @@ void pause() {
 	cin >> i;
 }
 
-void simpleSFML() {
-	RenderWindow window(VideoMode(200, 200), "SFML works!");
-
-	while (window.isOpen())
-	{
-		/*
-		sf::Event event;
-		while (window.pollEvent(event))
-		{
-			if (event.type == Event::Closed)
-				window.close();
-		}
-		*/
-		window.clear();
-		//window.draw(shape);
-		window.display();
-	}
-	pause();
-}
-
-void testRPN() {
-	String testString = "3*8+2";
-	Queue<Token*> infixExpression = convert(testString);
-
-	/*
-	while (!infixExpression.empty()) {
-		Token* p = infixExpression.pop();
-		cout << " ";
-		p->print();
-	}
-	*/
-
-	Queue<Token*> postfixExpression = shuntingYard(infixExpression);
-
-	while (!postfixExpression.empty()) {
-		Token* p = postfixExpression.pop();
-		cout << " ";
-		p->print();
+void menu() {
+	int num = 0;
+	cout << "how many functions would you like to input? > ";
+	cin >> num;
+	cout << "\n\n";
+	for (int i = 0; i < num; i++) {
+		std::string temp;
+		cout << "enter function " << i+1 << " > ";
+		cin >> temp;
+		functions.push_back(static_cast<String>(temp));
 	}
 }

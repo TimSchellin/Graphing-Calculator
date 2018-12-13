@@ -31,6 +31,7 @@ public:
 	void drawFields();
 	void addFunction(String functionString);
 
+
 	Vector2f getCellPosition();
 
 private:
@@ -45,8 +46,6 @@ private:
 	bool mouseClicked = false;
 	bool mouseInsideRect = false;
 	bool dragging = false;
-
-	Vector2f mouseRectOffset;
 
 	int mouseX = 0;
 	int mouseY = 0;

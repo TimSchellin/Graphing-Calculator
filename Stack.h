@@ -16,10 +16,10 @@ public:
 	}
 
 	Stack<T>& operator=(const Stack<T>& rhs) {
-		cout << "\nstack assignment operator called";
+		//cout << "\nstack assignment operator called";
 		stack = rhs.stack;
 		size = rhs.size;
-		cout << "\nstack assignment executed";
+		//cout << "\nstack assignment executed";
 		return *this;
 	}
 

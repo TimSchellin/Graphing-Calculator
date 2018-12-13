@@ -19,11 +19,14 @@ public:
 	void virtual print(ostream& outs = cout) const {}
 	double virtual getNum() { return 0;  }
 	char virtual getSymbol() { return ' '; }
+	int virtual getPrecedence() { return 0; }
 
+	/*
 	friend ostream& operator << (ostream& outs, const Token* p) {
-		p->print();
+		//p->print();
 		return outs;
 	}
+	*/
 
 	int getType() {
 		return type;

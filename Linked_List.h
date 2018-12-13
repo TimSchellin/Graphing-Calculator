@@ -178,8 +178,11 @@ T delete_head(node<T>*& head_ptr) {
 	//3. get head_ptr to skip the head node and point to the node after it
 	//4. delete temp, which points to the head node
 
+	T hold_this = NULL;
 	assert(head_ptr != nullptr);
-	T hold_this = head_ptr->_item;
+	if (head_ptr->_item != NULL) {
+		T hold_this = head_ptr->_item;
+	}
 	node<T>* temp = head_ptr;
 	head_ptr = head_ptr->_next;
 	delete temp; //this is where the exception is thrown

@@ -1,8 +1,12 @@
+#define EVALUATE_H
+#ifndef EVALUATE_H
+
 #include <iostream>
 #include <cmath>
 #include <cassert>
 #include "Operand.h"
 #include "Operator.h"
+
 
 double evaluate(Token lhs, Token  rhs, Token optr) {
 	assert(optr.getType() == 1); //make sure 1 is for operators, and not operands
@@ -23,3 +27,5 @@ double evaluate(Token lhs, Token  rhs, Token optr) {
 			return result;
 	}
 }
+
+#endif
